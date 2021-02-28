@@ -1,4 +1,4 @@
-# hello-world
+# Sample accordion
 
 ## Project setup
 ```

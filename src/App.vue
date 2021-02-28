@@ -1,18 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Accordion :text="text"></Accordion>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Accordion from "@/components/Accordion";
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Accordion
+  },
+  data() {
+    return{
+      // text: [
+      //   {"First item": { body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
+      //       "Fusce id facilisis sapien. Suspendisse vel purus lectus.", display: false }},
+      //   {"Second item": { body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
+      //       "Fusce id facilisis sapien. Suspendisse vel purus lectus.", display: false }},
+      //   {"Third item": { body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
+      //       "Fusce id facilisis sapien. Suspendisse vel purus lectus.", display: false }},
+      // ]
+      text: [
+        {
+          name: "First item",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
+              "Fusce id facilisis sapien. Suspendisse vel purus lectus.",
+          display: false
+        },
+        {
+          name: "Second item",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
+              "Fusce id facilisis sapien. Suspendisse vel purus lectus.",
+          display: false
+          },
+        {
+          name: "Third item",
+          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
+              "Fusce id facilisis sapien. Suspendisse vel purus lectus.",
+          display: false
+        }
+      ]
+    }
+  },
 }
 </script>
 
@@ -22,7 +52,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>

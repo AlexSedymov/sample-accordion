@@ -30,6 +30,6 @@ export default {
   padding: 15px;
   width: auto;
   height: auto;
-  background: #b1b1b7;
+  background: #e3e3e3;
 }
 </style>

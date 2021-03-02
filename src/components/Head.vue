@@ -1,5 +1,5 @@
 <template>
-  <div :style="cssVars" @click="changeBgColor">
+  <div :style="cssVars">
     <div @click="hider" class="main-head">
       {{ text.name }}
       <div class="symbol">
@@ -23,22 +23,16 @@ name: "Head",
     Plus,
     Minus
   },
-  // TODO!
-  data() {
-    return {
-      bgColor: "#919191"
-    }
-  },
   props: {
     text: {
       type: Object,
       default: () => {},
-    }
+    },
   },
   computed: {
     cssVars() {
       return {
-        'background-color': this.bgColor,
+        'background-color': this.text.bgColor,
       }
     }
   },
@@ -46,14 +40,6 @@ name: "Head",
     hider() {
       this.$emit("display", this.text.name)
     },
-    changeBgColor() {
-      if (this.text.display) {
-        this.bgColor = "#B7B7B7"
-      }
-      else {
-        this.bgColor = "#919191"
-      }
-    }
   }
 }
 </script>

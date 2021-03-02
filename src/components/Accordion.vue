@@ -31,12 +31,15 @@ export default {
       for (let i = 0; this.allTexts.length > i; i++) {
         if(this.allTexts[i].name === headerName && this.allTexts[i].display === true) {
           this.allTexts[i].display = !this.allTexts[i].display
+          this.allTexts[i].bgColor = this.changeBgColor(this.allTexts[i].display)
         }
         else {
           this.allTexts[i].display = this.allTexts[i].name === headerName;
+          this.allTexts[i].bgColor = this.changeBgColor(this.allTexts[i].display)
         }
       }
-    }
+    },
+    changeBgColor(val) { return (val) ? "#B7B7B7" : "#919191"}
   }
 }
 </script>

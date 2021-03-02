@@ -13,32 +13,27 @@ export default {
   },
   data() {
     return{
-      // text: [
-      //   {"First item": { body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
-      //       "Fusce id facilisis sapien. Suspendisse vel purus lectus.", display: false }},
-      //   {"Second item": { body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
-      //       "Fusce id facilisis sapien. Suspendisse vel purus lectus.", display: false }},
-      //   {"Third item": { body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
-      //       "Fusce id facilisis sapien. Suspendisse vel purus lectus.", display: false }},
-      // ]
       text: [
         {
           name: "First item",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
               "Fusce id facilisis sapien. Suspendisse vel purus lectus.",
-          display: false
+          display: false,
+          bgColor: "#919191"
         },
         {
           name: "Second item",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
               "Fusce id facilisis sapien. Suspendisse vel purus lectus.",
-          display: false
+          display: false,
+          bgColor: "#919191"
           },
         {
           name: "Third item",
           body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget aliquet tellus. " +
               "Fusce id facilisis sapien. Suspendisse vel purus lectus.",
-          display: false
+          display: false,
+          bgColor: "#919191"
         }
       ]
     }
